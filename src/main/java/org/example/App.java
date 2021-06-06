@@ -1,14 +1,16 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 9 Solution
+ *  Copyright 2021 Isaac Liljeros
+ */
+
 package org.example;
 
 import java.util.Scanner;
 
 /**
  * Hello world!
- *
  */
 public class App {
-
-    private static double areaPerCan = 350;
 
     public static void main( String[] args ) {
         Scanner input = new Scanner(System.in);
@@ -26,6 +28,7 @@ public class App {
     }
 
     private static int paintCalc(double area) {
+        double areaPerCan = 350;
         double cans = Math.ceil(area / areaPerCan);
         return (int)cans;
     }
